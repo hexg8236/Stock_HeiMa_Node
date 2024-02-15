@@ -1,4 +1,3 @@
-nv
 /************************* 配置 *************************/
 module.exports = {
     components:'/components',// 指定views下组件所在目录,动态路由组件必须放在该目录下，且路径名称为组件名称
@@ -28,7 +27,7 @@ module.exports = {
         proxy: {// 跨域请求配置
             "/api": {
                 secure: false,// 关闭安全检测，默认请求 https
-                target: "http://localhost:8091",
+                target: "http://localhost:8080",
                 changeOrigin: true,
                 // pathRewrite: {"^/api" : ""},
             }
